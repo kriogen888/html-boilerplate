@@ -8,10 +8,12 @@
 
 /* Module data example */
 
-_template: {
-    big: {
-        title: 'Hello world',
-        age: 10,
-        button: false
+const data = {
+    _template: {
+        big: {
+            title: 'Hello world',
+            age: 10,
+            button: false
+        }
     }
-}
+};

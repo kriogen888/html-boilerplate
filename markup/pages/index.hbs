@@ -8,14 +8,52 @@
 <body class="page">
 %=symbols=%
 
+{{> spinner/spinner}}
+
+<section class="header page parallax home-parallax" id="home">
+    <div class="section_overlay">
+        <div class="container home-container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <div class="home_text">
+                        <!-- TITLE AND DESC -->
+                        <h1><span style="color:orange">Удобный сервис</span> GPS&nbsp;-&nbsp;мониторинга<br> и
+                            наблюдения за ребёнком
+                        </h1>
+                        <p>Всегда будь в курсе где твой малыш сейчас!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="page__wrapper">
 
     <!-- Include your modules here -->
 
     {{> example/example}}
-    {{> _template/_template _template.big}}
 
     <div class="page__buffer"></div>
+
+    <a class="fancybox-me" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+        YouTube video
+    </a>
+
+    <br>
+
+    <a class="fancybox-me" data-fancybox data-src="#hidden-content" href="javascript:;">
+        Hidden div
+    </a>
+    <div style="display: none;" id="hidden-content">
+        <h2>Hello</h2>
+        <p>You are awesome.</p>
+    </div>
+    <br>
+
+    <a class="fancybox-me" data-fancybox data-type="iframe" data-src="http://codepen.io/fancyapps/full/jyEGGG/" href="javascript:;">
+        Webpage
+    </a>
 
 
 </section>
@@ -27,8 +65,19 @@
 <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
 <script>svg4everybody();</script>
 
+
+<script src="%=static=%js/common%=hash=%%=min=%.js"></script>
+
+
 <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
 <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+
+<script>
+    //    console.log(main);
+</script>
+
+<script src="%=static=%js/lib%=hash=%%=min=%.js"></script>
+
 </body>
 
 </html>

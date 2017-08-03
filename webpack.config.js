@@ -18,15 +18,20 @@ let preLoaders = [
         loader: 'source-map-loader'
     }
 ];
-let loaders = [{
-    test: /\.json$/,
-    loader: 'json'
-}];
+let loaders = [
+    {
+        test: /\.json$/,
+        loader: 'json'
+    }
+];
 let plugins = [
     new webpack.DefinePlugin({
         'process.env': {
             NODE_ENV: JSON.stringify(process.env.NODE_ENV)
         }
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+        name: 'common'
     })
 ];
 
@@ -115,13 +120,15 @@ function prepareEntryPoints(entryConfig) {
 module.exports = {
     // We have to add some pathes to entry point in case of using HMR
     entry: prepareEntryPoints({
-        main: path.resolve(`${cwd}/markup/${staticFolderName}/js/main.js`)
+        main: path.resolve(`${cwd}/markup/${staticFolderName}/js/main.js`),
+        lib: path.resolve(`${cwd}/markup/${staticFolderName}/js/lib.js`)
     }),
 
     output: {
         path: path.resolve(`${cwd}/dev/${staticFolderName}/js`),
         publicPath: `./${staticFolderName}/js/`,
-        filename: `${outputFileNameTemplate}.js`
+        filename: `${outputFileNameTemplate}.js`,
+        library: '[name]'
     },
 
     devtool: generateSourceMaps ? sourceMapsType : null,

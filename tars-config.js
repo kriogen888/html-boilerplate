@@ -10,7 +10,7 @@ module.exports = {
         }
     },
     "css": {
-        "workflow": "concat"
+        "workflow": "concat",
     },
     "js": {
         "workflow": "modular",
@@ -20,7 +20,10 @@ module.exports = {
         "removeConsoleLog": true,
         "webpack": {
             "useHMR": false,
-            "providePlugin": {}
+            "providePlugin": {
+                $: "jquery",
+                jQuery: "jquery"
+            }
         },
         "jsPathsToConcatBeforeModulesJs": [],
         "lintJsCodeBeforeModules": false,
