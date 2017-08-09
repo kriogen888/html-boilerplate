@@ -10,29 +10,12 @@
 
 {{> spinner/spinner}}
 
-<section class="header page parallax home-parallax" id="home">
-    <div class="section_overlay">
-        <div class="container home-container">
-            <div class="row">
-                <div class="col-md-8 col-sm-8">
-                    <div class="home_text">
-                        <!-- TITLE AND DESC -->
-                        <h1><span style="color:orange">Удобный сервис</span> GPS&nbsp;-&nbsp;мониторинга<br> и
-                            наблюдения за ребёнком
-                        </h1>
-                        <p>Всегда будь в курсе где твой малыш сейчас!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{> section/section-home section.home}}
+{{> section/section section.defaults}}
 
 <section class="page__wrapper">
 
     <!-- Include your modules here -->
-
-    {{> example/example}}
 
     <div class="page__buffer"></div>
 
@@ -51,7 +34,8 @@
     </div>
     <br>
 
-    <a class="fancybox-me" data-fancybox data-type="iframe" data-src="http://codepen.io/fancyapps/full/jyEGGG/" href="javascript:;">
+    <a class="fancybox-me" data-fancybox data-type="iframe" data-src="http://codepen.io/fancyapps/full/jyEGGG/"
+       href="javascript:;">
         Webpage
     </a>
 

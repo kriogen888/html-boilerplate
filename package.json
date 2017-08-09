@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@fancyapps/fancybox": "git+https://github.com/fancyapps/fancybox.git",
+    "css-mqpacker": "^6.0.1",
     "exports-loader": "^0.6.4",
     "expose": "^0.1.4",
     "gulp": "^3.9.1",

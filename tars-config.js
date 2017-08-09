@@ -1,5 +1,10 @@
 module.exports = {
-    "postcss": [],
+    "postcss": [
+        {
+            name: 'css-mqpacker',
+            options: {}
+        }
+    ],
     "svg": {
         "active": true,
         "workflow": "sprite",

@@ -9,10 +9,7 @@
 // require('imports?jQuery=jquery!@fancyapps/fancybox');
 
 import 'components/spinner/spinner';
-
-
-// console.log($);
-// console.log(fancybox);
+import 'components/section/section';
 
 $(document).ready(function () {
     // $('.fancybox-me').fancybox();

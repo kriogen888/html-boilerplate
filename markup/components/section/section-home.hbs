@@ -1,0 +1,29 @@
+<section class="section section_home parallax {{#unless useVideoBackground}}bg-img_home{{/unless}}" id="home">
+
+    <div class="section-overlay">
+
+    {{#if useVideoBackground}}
+        <div class="section-background">
+            <div class="bg-video_buffer"></div>
+            <iframe class="bg-video_content"
+                    src="//coub.com/embed/tv2n2?muted=true&autostart=true&originalSize=false&startWithHD=true"></iframe>
+        </div>
+    {{/if}}
+
+
+        <div class="section-content">
+            <div class="container">
+                <div class="section__text">
+                    <!-- TITLE AND DESC -->
+                    <h1 class="section__text__title">{{{title}}}</h1>
+                    <p class="section__text__description">{{{description}}}</p>
+                </div>
+                {{#if useImages}}
+                    <div class="section__img">
+                        <img src="%=static=%img/assets/section/home2.png" alt="">
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</section>
