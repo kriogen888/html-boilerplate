@@ -3,6 +3,7 @@
 
 <head>
     {{> head/head head.defaults}}
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body class="page">
@@ -10,6 +11,7 @@
 
 {{> spinner/spinner}}
 
+{{> navigation/navigation navigation}}
 {{> section/section-home section.home}}
 {{> section/section section.defaults}}
 
@@ -55,10 +57,6 @@
 
 <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
 <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
-
-<script>
-    //    console.log(main);
-</script>
 
 <script src="%=static=%js/lib%=hash=%%=min=%.js"></script>
 

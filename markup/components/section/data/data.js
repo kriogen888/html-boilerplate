@@ -13,7 +13,7 @@ const data = {
             title: '<span style="color:orange">home</span> title page',
             description: 'Home description',
             useImages: false,
-            useVideoBackground: true
+            useVideoBackground: false
         },
         defaults: {
             name: 'defaults',

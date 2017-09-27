@@ -1,7 +1,7 @@
 setInterval(function () {
-    let r = $(window).height() - $('.container').height();
+    let r = $(window).height() - $('.container-home').height();
 
-    $('.container').css({
+    $('.container-home').css({
         'padding-top': Math.round(r / 2) + 'px',
         'padding-bottom': Math.round(r / 2) + 'px'
     });

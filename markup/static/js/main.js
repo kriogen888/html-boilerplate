@@ -10,6 +10,7 @@
 
 import 'components/spinner/spinner';
 import 'components/section/section';
+import 'components/navigation/navigation';
 
 $(document).ready(function () {
     // $('.fancybox-me').fancybox();

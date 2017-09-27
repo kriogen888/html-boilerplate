@@ -1,0 +1,14 @@
+<nav class="navbar" role="navigation">
+    <div class="container">
+        <!-- Логотип -->
+        <div class="navbar-brand">
+            <a href="#">Brand</a>
+        </div>
+
+        <ul class="navbar-menu">
+            {{#each navMenu}}
+                <li><a href="{{{link}}}">{{{name}}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+</nav>

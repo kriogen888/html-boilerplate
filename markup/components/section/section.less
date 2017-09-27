@@ -6,16 +6,6 @@
     overflow: hidden;
   }
 
-  .container {
-    //position: relative;
-    margin: 0 auto;
-    max-width: 1170px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
   .section-background {
     position: relative;
     z-index: -100;
@@ -70,9 +60,14 @@
 }
 
 .bg-img_home {
-  background-image: url("%=static=%assets/section/bg_home.jpg");
 
   .section-content {
     position: relative;
+  }
+}
+
+@media screen and (min-width: @width-md) {
+  .bg-img_home {
+    background-image: url("%=static=%assets/section/bg_home.jpg");
   }
 }
